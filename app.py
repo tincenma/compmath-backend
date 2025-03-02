@@ -30,8 +30,8 @@ def evaluate_function(function_str):
     return sp.lambdify(x, expr, "numpy")
 
 @app.route('/')
-def index():
-    return "Server is running..."
+def status():
+    return ("Server is running...")
 
 # --------------------- Plot Graph (Task 1) ---------------------
 @app.route("/plot_graph", methods=["POST"])
